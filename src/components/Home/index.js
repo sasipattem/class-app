@@ -10,7 +10,7 @@ class Home extends Component{
     onDecrement=()=>{
         this.setState((prev)=>({count:prev.count-1}))
     }
-    
+
     render(){
         const {count}=this.state
     return(
@@ -18,8 +18,8 @@ class Home extends Component{
                 <h1 className="heading">Counter</h1>
                 <p className="count">{count}</p>
                 <div>
-                    <button className="button" onClick={this.onIncrement}>Increase</button>
-                    <button className="button" onClick={this.onDecrement}>Decrease</button>
+                    <button className="button" onClick={this.onIncrement}>Increase count</button>
+                    <button className="button" onClick={this.onDecrement}>Decrease count</button>
                 </div>
            </div>)
 
